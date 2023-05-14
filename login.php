@@ -14,17 +14,21 @@
                         <h4>Login</h4>
                     </div>
                     <div class="card-body">
-                        <div class="form-group mb-3">
-                            <label for="email">Email</label>
-                            <input id="email" type="email" placeholder="example@example.com" class="form-control" required>
-                        </div>
-                        <div class="form-group mb-3">
-                            <label for="password">Password</label>
-                            <input type="password" placeholder="Passowrd" id="password" class="form-control" required>
-                        </div>
-                        <div class="form-group mb-3">
-                            <button type="submit" class="btn btn-primary">Login</button>
-                        </div>
+                        <form action="loginCode.php" method="POST">
+                            <div class="form-group mb-3">
+                                <label for="email">Email</label>
+                                <input id="email" name="email" type="email" placeholder="example@example.com" class="form-control"
+                                    required>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="password">Password</label>
+                                <input type="password" name="password" placeholder="Passowrd" id="password" class="form-control"
+                                    required>
+                            </div>
+                            <div class="form-group mb-3">
+                                <button type="submit" name="loginBtn" class="btn btn-primary">Login</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
